@@ -7,19 +7,24 @@
 //
 
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController {
 
+  let items = ["First", "Second", "Third", "Fourth"]
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    let tabIndicator = ASTabIndicatorView(items)
+  
+    view.addSubview(tabIndicator)
+    
+    tabIndicator.snp.makeConstraints { (make) in
+      make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+      make.leading.equalToSuperview()
+      make.trailing.equalToSuperview()
+      make.height.equalTo(30)
+    }
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
 }
-

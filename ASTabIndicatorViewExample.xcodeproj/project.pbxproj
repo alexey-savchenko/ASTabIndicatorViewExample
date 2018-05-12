@@ -13,6 +13,7 @@
 		022BC4EC20A6DE6000DD42C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022BC4EB20A6DE6000DD42C6 /* Assets.xcassets */; };
 		022BC4EF20A6DE6000DD42C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022BC4ED20A6DE6000DD42C6 /* LaunchScreen.storyboard */; };
 		022BC4F720A6DE8A00DD42C6 /* TabIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BC4F620A6DE8A00DD42C6 /* TabIndicatorView.swift */; };
+		027EFA1220A6DF2F003A0EFD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EFA1120A6DF2F003A0EFD /* UIColor+Extensions.swift */; };
 		C0B3FE037E141AEBD4995738 /* Pods_ASTabIndicatorViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C7A9C662E5E20B958A42F /* Pods_ASTabIndicatorViewExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		022BC4EE20A6DE6000DD42C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		022BC4F020A6DE6000DD42C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		022BC4F620A6DE8A00DD42C6 /* TabIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabIndicatorView.swift; sourceTree = "<group>"; };
+		027EFA1120A6DF2F003A0EFD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		2A7C7A9C662E5E20B958A42F /* Pods_ASTabIndicatorViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASTabIndicatorViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43AD25210631B02FEEA810AF /* Pods-ASTabIndicatorViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTabIndicatorViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASTabIndicatorViewExample/Pods-ASTabIndicatorViewExample.release.xcconfig"; sourceTree = "<group>"; };
 		86CAD03A45F6517250FFB23C /* Pods-ASTabIndicatorViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTabIndicatorViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASTabIndicatorViewExample/Pods-ASTabIndicatorViewExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				022BC4EB20A6DE6000DD42C6 /* Assets.xcassets */,
 				022BC4ED20A6DE6000DD42C6 /* LaunchScreen.storyboard */,
 				022BC4F020A6DE6000DD42C6 /* Info.plist */,
+				027EFA1120A6DF2F003A0EFD /* UIColor+Extensions.swift */,
 			);
 			path = ASTabIndicatorViewExample;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				022BC4F720A6DE8A00DD42C6 /* TabIndicatorView.swift in Sources */,
 				022BC4E720A6DE5E00DD42C6 /* ViewController.swift in Sources */,
 				022BC4E520A6DE5E00DD42C6 /* AppDelegate.swift in Sources */,
+				027EFA1220A6DF2F003A0EFD /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +357,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N35W696BYS;
 				INFOPLIST_FILE = ASTabIndicatorViewExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = svch.ASTabIndicatorViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -369,7 +376,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N35W696BYS;
 				INFOPLIST_FILE = ASTabIndicatorViewExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = svch.ASTabIndicatorViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
