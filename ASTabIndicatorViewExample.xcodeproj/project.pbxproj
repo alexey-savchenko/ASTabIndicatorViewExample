@@ -12,6 +12,8 @@
 		022BC4EA20A6DE5E00DD42C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022BC4E820A6DE5E00DD42C6 /* Main.storyboard */; };
 		022BC4EC20A6DE6000DD42C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022BC4EB20A6DE6000DD42C6 /* Assets.xcassets */; };
 		022BC4EF20A6DE6000DD42C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 022BC4ED20A6DE6000DD42C6 /* LaunchScreen.storyboard */; };
+		022BC4F720A6DE8A00DD42C6 /* TabIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022BC4F620A6DE8A00DD42C6 /* TabIndicatorView.swift */; };
+		C0B3FE037E141AEBD4995738 /* Pods_ASTabIndicatorViewExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7C7A9C662E5E20B958A42F /* Pods_ASTabIndicatorViewExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		022BC4EB20A6DE6000DD42C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		022BC4EE20A6DE6000DD42C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		022BC4F020A6DE6000DD42C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		022BC4F620A6DE8A00DD42C6 /* TabIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabIndicatorView.swift; sourceTree = "<group>"; };
+		2A7C7A9C662E5E20B958A42F /* Pods_ASTabIndicatorViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ASTabIndicatorViewExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43AD25210631B02FEEA810AF /* Pods-ASTabIndicatorViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTabIndicatorViewExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ASTabIndicatorViewExample/Pods-ASTabIndicatorViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		86CAD03A45F6517250FFB23C /* Pods-ASTabIndicatorViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASTabIndicatorViewExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ASTabIndicatorViewExample/Pods-ASTabIndicatorViewExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B3FE037E141AEBD4995738 /* Pods_ASTabIndicatorViewExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				022BC4E320A6DE5E00DD42C6 /* ASTabIndicatorViewExample */,
 				022BC4E220A6DE5E00DD42C6 /* Products */,
+				3A3F309FBB349B9C0065F7D7 /* Pods */,
+				67C2A8C9AAF754C62832A152 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				022BC4E420A6DE5E00DD42C6 /* AppDelegate.swift */,
 				022BC4E620A6DE5E00DD42C6 /* ViewController.swift */,
+				022BC4F620A6DE8A00DD42C6 /* TabIndicatorView.swift */,
 				022BC4E820A6DE5E00DD42C6 /* Main.storyboard */,
 				022BC4EB20A6DE6000DD42C6 /* Assets.xcassets */,
 				022BC4ED20A6DE6000DD42C6 /* LaunchScreen.storyboard */,
 				022BC4F020A6DE6000DD42C6 /* Info.plist */,
 			);
 			path = ASTabIndicatorViewExample;
+			sourceTree = "<group>";
+		};
+		3A3F309FBB349B9C0065F7D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86CAD03A45F6517250FFB23C /* Pods-ASTabIndicatorViewExample.debug.xcconfig */,
+				43AD25210631B02FEEA810AF /* Pods-ASTabIndicatorViewExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67C2A8C9AAF754C62832A152 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A7C7A9C662E5E20B958A42F /* Pods_ASTabIndicatorViewExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 022BC4F320A6DE6000DD42C6 /* Build configuration list for PBXNativeTarget "ASTabIndicatorViewExample" */;
 			buildPhases = (
+				F196E872B597977C14F70C76 /* [CP] Check Pods Manifest.lock */,
 				022BC4DD20A6DE5E00DD42C6 /* Sources */,
 				022BC4DE20A6DE5E00DD42C6 /* Frameworks */,
 				022BC4DF20A6DE5E00DD42C6 /* Resources */,
+				E4B19F3D0C104F3C325C5129 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E4B19F3D0C104F3C325C5129 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ASTabIndicatorViewExample/Pods-ASTabIndicatorViewExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ASTabIndicatorViewExample/Pods-ASTabIndicatorViewExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F196E872B597977C14F70C76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ASTabIndicatorViewExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		022BC4DD20A6DE5E00DD42C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				022BC4F720A6DE8A00DD42C6 /* TabIndicatorView.swift in Sources */,
 				022BC4E720A6DE5E00DD42C6 /* ViewController.swift in Sources */,
 				022BC4E520A6DE5E00DD42C6 /* AppDelegate.swift in Sources */,
 			);
@@ -278,15 +347,13 @@
 		};
 		022BC4F420A6DE6000DD42C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86CAD03A45F6517250FFB23C /* Pods-ASTabIndicatorViewExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N35W696BYS;
 				INFOPLIST_FILE = ASTabIndicatorViewExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = svch.ASTabIndicatorViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +363,13 @@
 		};
 		022BC4F520A6DE6000DD42C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43AD25210631B02FEEA810AF /* Pods-ASTabIndicatorViewExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N35W696BYS;
 				INFOPLIST_FILE = ASTabIndicatorViewExample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = svch.ASTabIndicatorViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

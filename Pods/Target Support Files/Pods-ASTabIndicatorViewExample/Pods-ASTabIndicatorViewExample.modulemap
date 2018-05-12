@@ -1,0 +1,6 @@
+framework module Pods_ASTabIndicatorViewExample {
+  umbrella header "Pods-ASTabIndicatorViewExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
